@@ -13,8 +13,6 @@ public class Mammal {
     protected String eyeColor;
     protected String bodyTemp;
     protected String fingerLength;
-    protected String gender;
-    protected String birthDate;
     protected String height;
     protected String bodyType;
     protected String headSize;
