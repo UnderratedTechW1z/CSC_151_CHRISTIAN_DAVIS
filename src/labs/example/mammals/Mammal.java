@@ -13,10 +13,12 @@ public class Mammal {
     protected String eyeColor;
     protected String bodyTemp;
     protected String fingerLength;
+    protected String gender;
+    protected String birthDate;
     protected String height;
     protected String bodyType;
     protected String headSize;
-    public String name;
+    protected String name;
 
     // Methods of the Mammal Class
     public void mammal(String name) {
