@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 2/3/2025
+@date: 2/10/2025
 @purpose: My Mammal JAVA Program
 */
 
@@ -47,10 +47,6 @@ public class Mammal {
         System.out.println("The " + this.name + " sat down...");
         Thread.sleep(15000);
         System.out.println("The " + this.name + " stood up...");
-    }
-
-    public void speak(){
-        System.out.println("The " + this.name + " barked!");
     }
 
     public void climb(){

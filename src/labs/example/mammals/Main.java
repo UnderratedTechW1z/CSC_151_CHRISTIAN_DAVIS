@@ -1,18 +1,18 @@
 /*
 @author: Christian Davis
-@date: 2/3/2025
+@date: 2/10/2025
 @purpose: My Main JAVA Program that uses the Mammal.Java file
 */
 package labs.example.mammals;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        Mammal mammal = new Mammal();
+        Dog dog = new Dog();
 
-        mammal.setName("Dog");
-        mammal.getMammalDetails();
-        mammal.eat();
-        mammal.sit();
-        mammal.speak();
+        dog.setName("Dog");
+        dog.getMammalDetails();
+        dog.eat();
+        dog.sit();
+        dog.bark();
     }
 }
