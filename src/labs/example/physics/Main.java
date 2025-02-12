@@ -1,7 +1,7 @@
 /*
 @author: Christian Davis
-@date: 2/10/2025
-@purpose: The Dog Class for JAVA
+@date: 2/12/2025
+@purpose: The Main Class for my Physics Package
 */
 
 package labs.example.physics;
