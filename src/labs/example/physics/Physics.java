@@ -37,7 +37,7 @@ public class Physics {
     }
 
     public double getKineticEnergy(double m, double v){
-        double ke = 1/2 * m * v * v;
+        double ke = 1/2 * m * (v * v);
         return ke;
     }
 
