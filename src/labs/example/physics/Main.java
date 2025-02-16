@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 2/12/2025
+@date: 2/16/2025
 @purpose: The Main Class for my Physics Package
 */
 

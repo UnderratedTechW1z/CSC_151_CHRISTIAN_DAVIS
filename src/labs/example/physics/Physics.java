@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 2/12/2025
+@date: 2/16/2025
 @purpose: The Physics Class for my Physics package
 */
 
@@ -37,7 +37,7 @@ public class Physics {
     }
 
     public double getKineticEnergy(double m, double v){
-        double ke = 1/2 * m * (v * v);
+        double ke = 0.5 * m * (v * v);
         return ke;
     }
 
