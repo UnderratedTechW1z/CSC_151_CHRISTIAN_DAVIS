@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 2/16/2025
+@date: 2/20/2025
 @purpose: The Physics Class for my Physics package
 */
 
@@ -44,5 +44,39 @@ public class Physics {
     public double getPotentialEnergy(double m, double g, double h){
         double pe = m * g * h;
         return pe;
+    }
+
+    public static double getTheta(int xVal, int yVal){
+        double theta = Math.atan2(xVal, yVal) * 180/3.1415;
+        return theta;
+    }
+    
+    // Method for logInvalidAngleInfo()
+    public static void logInvalidAngleInfo(double angleInDegrees){
+        System.out.println("logging the angle " + angleInDegrees + " degrees. This is not a right angle.");
+    }
+
+    // Method for logValidAngleInfo()
+    public static void logValidAngleInfo(double angleInDegrees){
+        System.out.println("logging the angle " + angleInDegrees + " degrees. This is a valid 3-4-5 triangle.");
+    }
+
+    public static int getLightSpeedInMPH(){
+        int lightSpeed = 186282 * 3600;
+        return lightSpeed;
+    }
+
+    public static double getTimeFromSunToEarthInHours(){
+        double sunToEarth = (92947266.72/186282) / 3600;
+        return sunToEarth;
+    }
+
+    public static double getKnownDistanceToEarth(){
+        double knownDistance = 92947266.72;
+        return knownDistance;
+    }
+
+    public static void logEarthToSunInvalidDistance(){
+        System.out.println("The distance given is invalid...");
     }
 }

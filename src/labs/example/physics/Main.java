@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 2/16/2025
+@date: 2/20/2025
 @purpose: The Main Class for my Physics Package
 */
 
@@ -10,13 +10,23 @@ public class Main {
     
     public static void main(String[] args) {
         Physics physics = new Physics();
+        
+        double angleInDegrees = Physics.getTheta(3, 4);
+        // Check to see if the angle in degrees in greater than 37 or less than 36.87
+        if (angleInDegrees > 37 || angleInDegrees < 36.87){
+            // If the argument is true, Create new method called logInvalidAngleInfo()
+            Physics.logInvalidAngleInfo(angleInDegrees);
+        }
+        else{
+            // If not, Create new method called logValidAngleInfo()
+            Physics.logValidAngleInfo(angleInDegrees);
+        }
+        
+        double distanceCalculated = (physics.getDistance(Physics.getLightSpeedInMPH(), Physics.getTimeFromSunToEarthInHours()));
+        double knownDistance = Physics.getKnownDistanceToEarth();
 
-        System.out.println("The distance is " + physics.getDistance(2, 2) + " miles!");
-        System.out.println("The velocity is " + physics.getVelocity(2, 4) + " mph!");
-        System.out.println("The momentum is " + physics.getMomentum(2, 6) + " kg m/s!");
-        System.out.println("The force is " + physics.getForce(10, 3) + " kg m/s^2!");
-        System.out.println("The work is " + physics.getWork(12, 4) + " Joules!");
-        System.out.println("The Kinetic Energy is " + physics.getKineticEnergy(15, 6) + " NM!");
-        System.out.println("The Potential Energy is " + physics.getPotentialEnergy(12, 4, 5) + " NM!");
+        if (distanceCalculated < knownDistance){
+            Physics.logEarthToSunInvalidDistance();
+        }
     }
 }
