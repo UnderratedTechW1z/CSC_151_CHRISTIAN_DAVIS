@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 2/2x/2025
+@date: 2/26/2025
 @purpose: The WhileLoop.java program for CSC_151
 */
 
@@ -12,10 +12,11 @@ public class WhileLoop
     {
         executeWhileLoop();
     }
+    
     private static void executeWhileLoop()
     {
         int num = 0;
-        while (num <=10)
+        while (num < 10)
         {
             num++;
         }

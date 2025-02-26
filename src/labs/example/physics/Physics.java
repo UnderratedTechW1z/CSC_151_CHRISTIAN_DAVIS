@@ -66,8 +66,13 @@ public class Physics {
         return lightSpeed;
     }
 
+    public static int lightSpeed(){
+        int neutral_lightspeed = 186282;
+        return neutral_lightspeed;
+    }
+
     public static double getTimeFromSunToEarthInHours(){
-        double sunToEarth = (92947266.72/186282) / 3600;
+        double sunToEarth = (getKnownDistanceToEarth()/lightSpeed()) / 3600;
         return sunToEarth;
     }
 

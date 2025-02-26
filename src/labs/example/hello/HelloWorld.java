@@ -4,6 +4,12 @@
 @purpose: My first JAVA program
 */
 
+/*
+@Compile command: javac -d bin src/labs/example/loops/*.java
+@Run command: java -cp bin labs/example/loops/ForLoop
+@Change the directories and such whenever you use a new package or file
+*/
+
 package labs.example.hello;
 
 public class HelloWorld{
