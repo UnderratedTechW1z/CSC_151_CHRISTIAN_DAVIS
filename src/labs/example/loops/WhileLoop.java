@@ -8,18 +8,19 @@ package labs.example.loops;
 
 public class WhileLoop
 {
-    public static void main(String[] args)
+    public static void main()
     {
-        executeWhileLoop();
+        WhileLoop whileloop = new WhileLoop(); 
+        whileloop.executeWhileLoop();
     }
-    
-    private static void executeWhileLoop()
+
+    private void executeWhileLoop()
     {
         int num = 0;
         while (num < 10)
         {
             num++;
         }
-        System.out.println("There were " + num + " number of iterations, the loop is now complete!");
+        System.out.println("\nThere were " + num + " number of iterations, the loop is now complete!\n");
     }
 }

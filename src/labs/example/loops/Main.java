@@ -11,13 +11,9 @@ public class Main
     public static void main(String[] args)
     {
         WhileLoop whileloop = new WhileLoop(); 
-        executeWhileLoop();
+        WhileLoop.main();
 
         ForLoop forloop = new ForLoop();
-        callExecuteForLoop();
-        callSumTwoNumbers();
-        callSumLoopCounter();
-        callPrintMultiplicationTable();
-
+        ForLoop.main();
     }
 }
