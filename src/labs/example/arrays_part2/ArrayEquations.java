@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: 03/xx/2025
+@date: 03/23/2025
 @purpose: The Array Equations Java Program for the Week 10 Lab
 */
 
