@@ -11,6 +11,9 @@ public class Main
     public static void main(String[] args)
     {
         ArrayEquations arrayequations = new ArrayEquations();
-        checkEqualToAndLength();
+        arrayequations.checkEqualToAndLength();
+        arrayequations.sumThreeArrays();
+        arrayequations.findMaxValue();
+        arrayequations.mod10check();
     }
 }
