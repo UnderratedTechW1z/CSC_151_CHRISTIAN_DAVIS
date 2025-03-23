@@ -124,45 +124,36 @@ public class ArrayEquations
     public void mod10check()
     {
     int[] card_num = {4, 0, 1, 2, 8, 8, 8, 8, 8, 8, 8, 8, 1, 8, 8, 1};
-    int[] card_num_rev = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     int counter = 0;
     int mult = 2;
-    int sum_even = 0;
-    int odd_card_num = 0;
-    // Reverse the card number to go through it
-    for (int r = card_num.length; r >= 0; --r)
+    int sum = 0;
+    // Go through the card number checking the number every two digits
+    for (int z = card_num.length - 1; z >= 0; z++)
     {
-        card_num_rev[r] = card_num_rev[r] + card_num[r];
-    }
-    // Go through the reversed number checking the number every two digits
-    for (int z = 0; z <= card_num_rev.length; z++)
-    {
-        counter++;
         // If counter is at a specific point, multiply it by 2
         if (counter > 0 && counter % 2 == 0)
         {
-            int g = card_num_rev[z];
+            int g = card_num[z];
             int product = g * mult;
             // If the product of the multiplication is more than 2 digits, subtract 9 from it
             if (product > 9)
             {
                 int add_da_nums = product - 9;
-                sum_even = sum_even + add_da_nums;
+                sum = sum + add_da_nums;
             }
             // If the product doesn't require multiplication, leave the number be
             else
             {
-                sum_even = sum_even + product;
+                sum = sum + product;
             }
         }
         // If the counter isn't at a point that requires multiplication leave it
         else
         {
-            int product = card_num_rev[z];
-            odd_card_num = odd_card_num + product;
+            int product = card_num[z];
+            sum = sum + product;
         }
     }
-    int sum = sum_even + odd_card_num;
     if (sum % 10 == 0)
     {
         System.out.println("The number " + card_num + " is valid credit card number!");
