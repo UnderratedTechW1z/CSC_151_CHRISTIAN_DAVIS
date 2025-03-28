@@ -1,6 +1,6 @@
 /*
 @author: Christian Davis
-@date: xx/xx/2025
+@date: 03/28/2025
 @purpose: The FileOperator class for the fileOperations package
 */
 
@@ -9,7 +9,6 @@ package labs.example.fileOperations;
 import java.io.*;
 import java. time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
 
 public class FileOperator
 {
