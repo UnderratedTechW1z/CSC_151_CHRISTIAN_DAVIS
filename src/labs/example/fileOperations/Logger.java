@@ -1,7 +1,7 @@
 /*
 @author: Christian Davis
 @date: 04/01/2025
-@purpose: The FileOperator class for the fileOperations package
+@purpose: The Logger class for the fileOperations package
 */
 
 package labs.example.fileOperations;
